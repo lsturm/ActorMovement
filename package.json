@@ -1,0 +1,14 @@
+{
+    "name": "Laura-Movement-For-Actors",
+    "version": "0.0.0",
+    "private": true,
+    "dependencies": {
+        "metalsmith-templates": "0.5.x",
+        "metalsmith-markdown": "0.2.x",
+        "metalsmith-include": "0.0.x",
+        "metalsmith": "0.8.x",
+        "handlebars": "2.0.x",
+        "marked": "0.3.x"
+
+    }
+}
