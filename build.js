@@ -1,24 +1,17 @@
 var metalsmith = require('metalsmith'),
     markdown = require('metalsmith-markdown'),
     templates = require('metalsmith-templates'),
-    extname = require('path').extname,
     basename = require('path').basename,
+    extname = require('path').extname,
     fs = require('fs'),
     marked = require('marked'),
     Handlebars = require('handlebars'),
-    markdownToMetadata,
     markdownTest,
-    metaToHandlePartial,
-    metaGlobal,
     markdownToPartial;
 
 
 markdownToPartial = function (partialCallBack) {
     "use strict";
-    var data,
-        dir,
-        str;
-
 
     fs.readdir(__dirname + '/templates/markdownPartials', function (err, files) {
 
@@ -50,7 +43,6 @@ markdownToPartial(function(name, partial) {
         .use(templates('handlebars'))
         .build();
 
-        console.log(Handlebars);
     });
 
 
