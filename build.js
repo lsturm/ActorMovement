@@ -1,9 +1,8 @@
 var metalsmith = require('metalsmith'),
     markdown = require('metalsmith-markdown'),
     templates = require('metalsmith-templates'),
-    basename = require('path').basename,
-    dirname = require('path').dirname,
     extname = require('path').extname,
+    basename = require('path').basename,
     fs = require('fs'),
     marked = require('marked'),
     Handlebars = require('handlebars'),
@@ -14,14 +13,11 @@ var metalsmith = require('metalsmith'),
     markdownToPartial;
 
 
-markdownToPartial = function (partialRegistrationFunc) {
+markdownToPartial = function (partialCallBack) {
     "use strict";
     var data,
         dir,
-        html,
-        str,
-        globalPartials = {},
-        metalMeta = {};
+        str;
 
 
     fs.readdir(__dirname + '/templates/markdownPartials', function (err, files) {
@@ -32,91 +28,31 @@ markdownToPartial = function (partialRegistrationFunc) {
                 return;
             }
 
-            html = marked(fs.readFileSync(__dirname + '/templates/markdownPartials/' + file).toString());
-console.log(html);
+            fs.readFile(__dirname + '/templates/markdownPartials/' + file, function (err, md) {
+                var html;
 
-            partialRegistrationFunc(file, html);
+                html = marked(md.toString());
+                partialCallBack(basename(file, '.md'), html);
+
+            });
         });
 
     });
 
 };
 
-markdownToPartial(Handlebars.registerPartial);
-/*
-markdownToMetadata = function (options) {
-    "use strict";
-    options = options || {};
-    var keys = options.keys || [];
-    return function (files, metalsmith, done) {
-        var data,
-            dir,
-            html,
-            str,
-            globalPartials = {},
-            metalMeta = {};
+markdownToPartial(function(name, partial) {
 
-        setImmediate(done);
-        Object.keys(files).forEach(function (file) {
+    Handlebars.registerPartial(name, partial);
 
-            if (!markdownTest(file) || (!files[file].globalPartial)) {
-                return;
-            }
+    metalsmith(__dirname)
+        .use(markdown())
+        .use(templates('handlebars'))
+        .build();
 
-            data = files[file];
-            dir = dirname(file);
-            html = basename(file, extname(file));
+        console.log(Handlebars);
+    });
 
-            str = marked(data.contents.toString(), options);
-            data.contents = new Buffer(str);
-
-            keys.forEach(function (key) {
-                data[key] = marked(data[key], options);
-            });
-            delete files[file];
-            if (!metalsmith.metadata().globalPartials) {
-                globalPartials = {};
-                metalMeta = {};
-                globalPartials[html] = data.contents.toString();
-                metalMeta.globalPartials = globalPartials;
-                metalsmith.metadata(metalMeta);
-            } else {
-                metalMeta = metalsmith.metadata();
-                globalPartials = metalMeta.globalPartials;
-                globalPartials[html] = data.contents.toString();
-                metalMeta.globalPartials = globalPartials;
-                metalsmith.metadata(metalMeta);
-            }
-
-        });
-    };
-};
-*/
-metaToHandlePartial = function (options) {
-
-    return function (files, metalsmith, done) {
-/*
-        console.log(metalsmith.metadata());
-        console.log((metalsmith.metadata().globalPartials.classes));
-        Handlebars.registerPartial('classes', metalsmith.metadata().globalPartials.classes);
-
-*/
-        done();
-    };
-};
-
-
-metalsmith(__dirname)
-    .use(markdown())
-    .use(templates('handlebars'))
-    .build();
-
-/**
- * Check if a `file` is markdown.
- *
- * @param {String} file
- * @return {Boolean}
- */
 
 markdownTest = function (file) {
     "use strict";
