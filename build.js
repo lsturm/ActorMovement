@@ -13,30 +13,36 @@ var metalsmith = require('metalsmith'),
 markdownToPartial = function (partialCallBack) {
     "use strict";
 
-    fs.readdir(__dirname + '/templates/markdownPartials', function (err, files) {
+    var html,
+        partials = {};
 
-        files.forEach(function (file) {
+    fs.readdir(__dirname + '/templates/markdownPartials', function (err, files) {
+        files.forEach(function (file, index, files) {
+
 
             if (!markdownTest(file)) {
                 return;
             }
 
             fs.readFile(__dirname + '/templates/markdownPartials/' + file, function (err, md) {
-                var html;
 
                 html = marked(md.toString());
-                partialCallBack(basename(file, '.md'), html);
-
+                partials[basename(file, '.md')] = html;
+                    if(files.length - 1 === index) {
+                        partialCallBack(partials);
+                    }
             });
+
         });
 
     });
 
 };
 
-markdownToPartial(function(name, partial) {
-
-    Handlebars.registerPartial(name, partial);
+markdownToPartial(function(partials) {
+    Object.keys(partials).forEach(function(partialName) {
+        Handlebars.registerPartial(partialName, partials[partialName]);
+    });
 
     metalsmith(__dirname)
         .use(markdown())
