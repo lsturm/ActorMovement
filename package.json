@@ -8,7 +8,8 @@
         "metalsmith-include": "0.0.x",
         "metalsmith": "0.8.x",
         "handlebars": "2.0.x",
-        "marked": "0.3.x"
+        "marked": "0.3.x",
+        "metalsmith-sass": "0.3.x"
 
     }
 }

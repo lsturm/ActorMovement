@@ -3,35 +3,24 @@
 
 ###Rediscover Your Sense of Play
 
-+ Proven methods developed over millenia by children
-+ Learn Basic Laban Movement Notion
-+ Diverse exercises spefically selected for the diverse needs of an actor
-+ Tied together and inspired by Williamson Technique
-
-* Release habitual tensions
-* Increase your physical vocabulary
-* Hone your physical specificity
-* Move like different kinds of people
-* Make large physical choices
-* Respond organically and impulsively to stimuli
+* Release habitual tensions and develop an ease in your body and movement
+* Increase your physical vocabulary – great for creating new characters
+* Practice living fully present in the moment, responding organically and impulsively
+* Learn to make large and interesting physical choices 
 * Develop a sense of fantasy
-* Increase your intimacy
-* Find your sensuality
+* Increase your ability for emotional intimacy 
+* Hone your physical specificity
+* Explore all your senses and sensuality
+* Discover a variety of exercises specifically selected for the diverse needs of anactor
 * and much more
 
-####The Williamson Movement Technique
+###What is this class and why should I take it?
 
-Addresses how the imaginary world and craft of the actor comes alive in the body. Through deep exploration of breath, sensuality, dramatic movement, alignment, intimacy exercises and ensemble work, the actors engage in a process of physical awareness as to how their body functions in their art form. The actor's imagination is activated in every class using fantasy and relationship exercises thus integrating craft and physical work.
-
-####Williamson Technique
-
-Williamson Technique is a series of exercises that train the actor's ability to listen & communicate with the whole body while developing a stronger awareness of their own experience & the experience of being part of an ensemble. Two major aspects of the work are freedom & connection.
-
-Total physical freedom in the actor's behavior leads to his or her complete connection with the relationships & circumstances of the imaginary world. The actor explores how experiences flow out of the body into sound and motion (behavior) using specific movement choreography and vocal exercises. During this process, the actor becomes aware of those places in their body where tension occurs and shall learn ways to promote the release of that tension thus deepening breath, enhancing vocal quality and allowing the body to move with a sense of ease and clarity.
+Tired of not being comfortable in your body on stage? Frustrated with not knowing what to do with your hands and feeling awkward making strong physical choices? Movement class can change your life as an actor. Learn to let go of habitual tensions; get comfortable making large physical choices that are organic and impulsive. Learn to play like a child again and free up your acting by doing it. Sharpen your physical specificity and increase your physical vocabulary. This movement class combines various elements and teachings, primarily from Williamson Technique and Laban Movement Analysis work. The Williamson technique teaches students how to release the tensions in their body and trains them to respond organically moment. And, it’s fun!
 
 ####Artists Trained in the Williamson Physical Technique
 
-Artists Trained in the Williamson Physical Technique include:
+**And in case you’ve never heard of the Williamson Technique, here are a few artists who have trained this way:**
 
 - Calista Flockart
 - James Gandolfini

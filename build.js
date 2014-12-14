@@ -1,6 +1,7 @@
 var metalsmith = require('metalsmith'),
     markdown = require('metalsmith-markdown'),
     templates = require('metalsmith-templates'),
+    sass = require('metalsmith-sass'),
     basename = require('path').basename,
     extname = require('path').extname,
     fs = require('fs'),
@@ -47,6 +48,9 @@ markdownToPartial(function(partials) {
     metalsmith(__dirname)
         .use(markdown())
         .use(templates('handlebars'))
+        .use(sass({
+            "outputStyle": 'expanded'
+        }))
         .build();
 
     });

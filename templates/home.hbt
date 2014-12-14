@@ -3,13 +3,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title }} | Movement For Actors</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssnormalize/cssnormalize-min.css">
+    <link rel="stylesheet" type="text/css" href="./scss/main.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>Movement For The Actor1</h1>
-        <h2>Free Your Body. Improve Your Acting.</h2>
+        <h1>Movement For The Actor</h1>
+        <h2>Free Your Body. Improve Your Acting!</h2>
 
             <ul>
                 <li><a href="#classes">Classes</a></li>
@@ -18,11 +21,22 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            {{> classes }}
+            <section>
+                {{> classes }}
+            </section>
 
-            {{> about }}
-            {{> paying }}
-            {{> contact }}
+            <section>
+                {{> about }}
+            </section>
+
+            <section>
+                {{> paying }}
+            </section>
+
+            <section>
+                {{> contact }}
+            </section>
+
     </div>
 </body>
 </html>

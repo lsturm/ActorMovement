@@ -1,0 +1,51 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Bangers|VT323);
+
+$major-font: 'Bangers', cursive; 
+$body-font: 'VT323', cursive; 
+
+@media (min-width: 40em) { 
+
+    html {
+        font-size: 112%;
+    }
+
+    section {
+        background-color: Black;
+        float: left;
+        margin: 2em;
+        padding: 2em 4em;
+        width: 40%;
+    }
+}
+ 
+@media (min-width: 64em) { 
+    html { font-size: 120%; }
+}
+
+body {
+
+    background-color: White;
+    color: White;
+
+    font: 100% $body-font;
+    line-height: 1.2em;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    font-family: $major-font;
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 68em;
+    width: 90%;
+}
