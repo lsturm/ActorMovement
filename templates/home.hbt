@@ -11,31 +11,65 @@
 
 <body>
     <div class="container">
-        <h1>Movement For The Actor</h1>
-        <h2>Free Your Body. Improve Your Acting!</h2>
 
+        <header>
+            <div class="header_text">
+                <h1>Movement For The Actor</h1>
+                <h2>Free Your Body. Improve Your Acting!</h2>
+                <h3>Taught by Laura Sturm</h3>
+            </div>
+        </header>
+
+        <nav>
             <ul>
                 <li><a href="#classes">Classes</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#bio">Bio</a></li>
                 <li><a href="#paying">Paying</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+        </nav>
+
+
+            <div class="clearfix">
+                <section class="information">
+                    {{> about }}
+                </section>
+
+                <section class="information">
+                    {{> classes }}
+                </section>
+
+                <section class="information">
+                    {{> bio }}
+                </section>
+
+            </div>
 
             <section>
-                {{> classes }}
+                <img src="images/1stSection.jpg" alt="Moving students" /> 
             </section>
 
-            <section>
-                {{> about }}
-            </section>
+
+            <div class="clearfix">
+                <section class="information">
+                    {{> paying }}
+                </section>
+
+                <section class="information">
+                    {{> contact }}
+                </section>
+            </div>
 
             <section>
-                {{> paying }}
+                <img src="images/2ndSection.jpg" alt="Moving students" /> 
             </section>
 
+
             <section>
-                {{> contact }}
+                <img src="images/3rdSection.jpg" alt="Moving students" /> 
             </section>
+
 
     </div>
 </body>

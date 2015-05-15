@@ -11,7 +11,7 @@
 * Increase your ability for emotional intimacy 
 * Hone your physical specificity
 * Explore all your senses and sensuality
-* Discover a variety of exercises specifically selected for the diverse needs of anactor
+* Discover a variety of exercises specifically selected for the diverse needs of an actor
 * and much more
 
 ###What is this class and why should I take it?

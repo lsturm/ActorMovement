@@ -1,13 +1,44 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  *zoom: 1;
+}
+
 *, *:before, *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Bangers|VT323);
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:700,400italic);
 
-$major-font: 'Bangers', cursive; 
-$body-font: 'VT323', cursive; 
+$major-font: 'Fira Sans', sans-serif;
+$body-font: 'Fira Sans', sans-serif;
+
+section {
+    background-color: rgba(255, 255, 255, .8);
+    color: black;
+
+    img {
+        float: left;
+        width: 100%;
+    }
+}
+
+@media (max-width: 40em) {
+
+    section {
+        padding: 1em;
+    }
+}
 
 @media (min-width: 40em) { 
 
@@ -15,11 +46,10 @@ $body-font: 'VT323', cursive;
         font-size: 112%;
     }
 
-    section {
-        background-color: Black;
+    .information {
         float: left;
         margin: 2em;
-        padding: 2em 4em;
+        padding: 0em 4em;
         width: 40%;
     }
 }
@@ -30,11 +60,11 @@ $body-font: 'VT323', cursive;
 
 body {
 
-    background-color: White;
+    background-image: url('../images/grass.jpg');
     color: White;
 
-    font: 100% $body-font;
-    line-height: 1.2em;
+    font: 100% $body-font 400;
+    line-height: 1.4em;
 
 }
 
@@ -44,8 +74,45 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+header {
+    background-attachment: fixed;
+    background-image: url('../images/top.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 13em;
+    div.header_text {
+        background-color:rgba(0, 119, 255, 0.43);
+        padding: 2em;
+    }
+
+}
+
+nav {
+    background-color: rgba(255, 255, 255, .5);
+    max-width: 30%;
+    padding: 1em;
+}
 .container {
     margin: 0 auto;
-    max-width: 68em;
-    width: 90%;
 }
+
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: #222;
+}
+
+a:hover {
+
+    color: #666;
+}
+
+a:active {
+    
+    color: #444;
+}
+
+
