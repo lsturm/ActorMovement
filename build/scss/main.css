@@ -1,0 +1,78 @@
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:700,400italic);
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+section {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black; }
+  section img {
+    float: left;
+    width: 100%; }
+
+@media (max-width: 40em) {
+  section {
+    padding: 1em; } }
+
+@media (min-width: 40em) {
+  html {
+    font-size: 112%; }
+  .information {
+    float: left;
+    margin: 2em;
+    padding: 0em 4em;
+    width: 40%; } }
+
+@media (min-width: 64em) {
+  html {
+    font-size: 120%; } }
+
+body {
+  background-image: url('../images/grass.jpg');
+  color: White;
+  font: 100% 'Fira Sans', sans-serif 400;
+  line-height: 1.4em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fira Sans', sans-serif; }
+
+header {
+  background-attachment: fixed;
+  background-image: url('../images/top.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 13em; }
+  header div.header_text {
+    background-color: rgba(0, 119, 255, 0.43);
+    padding: 2em; }
+
+nav {
+  background-color: rgba(255, 255, 255, 0.5);
+  max-width: 30%;
+  padding: 1em; }
+
+.container {
+  margin: 0 auto; }
+
+a:link {
+  color: black; }
+
+a:visited {
+  color: #222; }
+
+a:hover {
+  color: #666; }
+
+a:active {
+  color: #444; }
