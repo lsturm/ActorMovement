@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Fira+Sans:700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table; }
@@ -18,12 +19,14 @@ section {
   background-color: rgba(255, 255, 255, 0.8);
   color: black; }
   section img {
-    float: left;
+    display: block;
     width: 100%; }
 
 @media (max-width: 40em) {
   section {
-    padding: 1em; } }
+    padding: 1em; }
+  section.imageQuadrant {
+    padding: 0em; } }
 
 @media (min-width: 40em) {
   html {
@@ -32,7 +35,10 @@ section {
     float: left;
     margin: 2em;
     padding: 0em 4em;
-    width: 40%; } }
+    width: 40%; }
+  .imageQuadrant img {
+    float: left;
+    width: 50%; } }
 
 @media (min-width: 64em) {
   html {
@@ -41,18 +47,19 @@ section {
 body {
   background-image: url('../images/grass.jpg');
   color: White;
-  font: 100% 'Fira Sans', sans-serif 400;
+  font-family: 'Indie Flower', cursive;
+  font-size: 100%;
   line-height: 1.4em; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Fira Sans', sans-serif; }
+  font-family: 'Indie Flower', cursive; }
 
 header {
   background-attachment: fixed;
   background-image: url('../images/top.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
-  padding-bottom: 13em; }
+  padding-bottom: 23em; }
   header div.header_text {
     background-color: rgba(0, 119, 255, 0.43);
     padding: 2em; }
