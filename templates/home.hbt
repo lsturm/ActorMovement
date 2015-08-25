@@ -52,7 +52,7 @@
 
             <div class="clearfix">
                 <section class="information">
-                    {{> paying }}
+                    {{> registration }}
                 </section>
 
                 <section class="information">
@@ -65,6 +65,10 @@
                 <img src="images/2ndSection.jpg" alt="Moving students" />
                 <img src="images/3rdSection.jpg" alt="Moving students" />
                 <img src="images/4thSection.jpg" alt="Moving students" />
+                <img src="images/5thSection.jpg" alt="Moving students" />
+                <img src="images/6thSection.jpg" alt="Moving students" />
+                <img src="images/7thSection.jpg" alt="Moving students" />
+                <img src="images/8thSection.jpg" alt="Moving students" />
             </section>
 
 

@@ -20,9 +20,10 @@
 
 @import url(http://fonts.googleapis.com/css?family=Fira+Sans:700,400italic);
 @import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco|Yeseva+One|La+Belle+Aurore|Unica+One|Nova+Square|Lemon|Carter+One|Chelsea+Market|Merienda|Love+Ya+Like+A+Sister);
 
-$major-font: 'Indie Flower', cursive;
-$body-font: 'Indie Flower', cursive;
+$major-font: 'Chelsea Market', cursive;
+$body-font: 'Sue Ellen Francisco', sans;
 
 section {
     background-color: rgba(255, 255, 255, .8);
@@ -46,28 +47,41 @@ section {
 }
 
 @media (min-width: 40em) { 
+    html {
+        font-size: 120%;
+    }
+
+    .information {
+        margin: 1em;
+        padding: 2em;
+    }
+}
+@media (min-width: 76em) { 
 
     html {
-        font-size: 112%;
+        font-size: 135%;
     }
 
     .information {
         float: left;
-        margin: 2em;
-        padding: 0em 4em;
-        width: 40%;
+        margin: 1em;
+        padding: 0em 2em;
+        width: 45%;
     }
 
     .imageQuadrant img {
         float: left;
-        width: 50%;
+        width: 25%;
     }
 
+    nav li {
+        display: inline;
+        padding: 1em;
+
+    }
 }
  
-@media (min-width: 64em) { 
-    html { font-size: 120%; }
-}
+
 
 body {
 
@@ -75,8 +89,9 @@ body {
     color: White;
 
     font-family: $body-font;
-    font-size: 100%; 
-    line-height: 1.4em;
+    font-size: 125%;
+    letter-spacing: .1em;
+    line-height: 1.8em;
 
 }
 
@@ -99,8 +114,8 @@ header {
 
 nav {
     background-color: rgba(255, 255, 255, .5);
-    max-width: 30%;
     padding: 1em;
+    text-align: center;
 }
 .container {
     margin: 0 auto;

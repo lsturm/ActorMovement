@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Fira+Sans:700,400italic);
 @import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco|Yeseva+One|La+Belle+Aurore|Unica+One|Nova+Square|Lemon|Carter+One|Chelsea+Market|Merienda|Love+Ya+Like+A+Sister);
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table; }
@@ -30,29 +31,36 @@ section {
 
 @media (min-width: 40em) {
   html {
-    font-size: 112%; }
+    font-size: 120%; }
+  .information {
+    margin: 1em;
+    padding: 2em; } }
+
+@media (min-width: 76em) {
+  html {
+    font-size: 135%; }
   .information {
     float: left;
-    margin: 2em;
-    padding: 0em 4em;
-    width: 40%; }
+    margin: 1em;
+    padding: 0em 2em;
+    width: 45%; }
   .imageQuadrant img {
     float: left;
-    width: 50%; } }
-
-@media (min-width: 64em) {
-  html {
-    font-size: 120%; } }
+    width: 25%; }
+  nav li {
+    display: inline;
+    padding: 1em; } }
 
 body {
   background-image: url('../images/grass.jpg');
   color: White;
-  font-family: 'Indie Flower', cursive;
-  font-size: 100%;
-  line-height: 1.4em; }
+  font-family: 'Sue Ellen Francisco', sans;
+  font-size: 125%;
+  letter-spacing: 0.1em;
+  line-height: 1.8em; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Indie Flower', cursive; }
+  font-family: 'Chelsea Market', cursive; }
 
 header {
   background-attachment: fixed;
@@ -66,8 +74,8 @@ header {
 
 nav {
   background-color: rgba(255, 255, 255, 0.5);
-  max-width: 30%;
-  padding: 1em; }
+  padding: 1em;
+  text-align: center; }
 
 .container {
   margin: 0 auto; }
